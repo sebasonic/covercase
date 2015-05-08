@@ -1,0 +1,98 @@
+.covercase-wrap {
+		position: relative;
+		border: 2px solid #777777;	
+		border-radius: 6px;
+		overflow: hidden;
+		.arrow {
+			position : absolute;
+			width: 68px;
+			height: 68px;
+			z-index: 2;
+		}
+		.arrow:hover{
+			cursor:pointer;
+		}
+}
+
+.covercase-x {
+	overflow: hidden;
+	height: 204px;
+	width: 100%;
+	max-width: 100%;
+	margin: 20px 0 20px 0;
+	.covercase-list-wrap{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		height: 220px;
+	}
+	.covercase{
+		display: inline-block;
+		white-space: nowrap;
+		position: relative;
+		> *{
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	.left {
+	    background: url("covercase_arrows.png") 204px 68px;
+		top: 50%;
+		left:20px;
+		margin-top:-34px;
+	}
+	.left:hover{
+		background: url("covercase_arrows.png") 204px 0px;
+	}
+	.left:active{
+		background: url("covercase_arrows.png") 204px 68px;
+	}
+	.right {
+	    background: url("covercase_arrows.png") 68px 68px;
+		top: 50%;
+		right:20px;
+		margin-top:-34px;
+	}
+	.right:hover{
+		background: url("covercase_arrows.png") 68px 0px;
+	}
+	.right:active{
+		background: url("covercase_arrows.png") 68px 68px;
+	}
+}
+
+.covercase-y {
+	width: 204px;
+	height: 100%;
+	max-height: 100%;
+	margin: 20px;
+	.covercase-list-wrap{
+		overflow-y: scroll;
+		overflow-x: hidden;
+		width: 220px;
+		height: 100%;
+	}
+	.up {
+	    background: url("covercase_arrows.png") 137px 68px;
+	    top: 20px;
+		left:50%;
+		margin-left:-34px;
+	}
+	.up:hover{
+			background: url("covercase_arrows.png") 137px 0px;
+		}
+	.up:active{
+			background: url("covercase_arrows.png") 137px 68px;
+		}
+	.down {
+	    background: url("covercase_arrows.png") 0px 68px;
+	    bottom: 20px;
+		left:50%;
+		margin-left:-34px;
+	}
+	.down:hover{
+		background: url("covercase_arrows.png") 0px 0px;
+	}
+	.down:active{
+		background: url("covercase_arrows.png") 0px 68px;
+	}
+}
