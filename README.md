@@ -3,7 +3,24 @@ A slider menu with vertical or horizontal orientation
 
 It's a ultra light weight [jQuery](http://jquery.com/) plugin that that turns the first level children of an element into a slider menu.
 
+
+##Requirement :
+[jQuery](http://jquery.com/)
+Horizontal scrolling with mouse wheel require : [jQuery Mousewheel Plugin](https://github.com/jquery/jquery-mousewheel)
+Paste jquery.covercase.min.js and jquery.mousewheel.min.js into your js folder
+Paste jquery.covercase.css into your stylesheet folder
+Adjust the image path in the jquery.covercase.css
+
+```html
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.covercase.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.covercase.min.js"></script>
+```
+
+
 ## Example :
+
 Here is the simpliest example of how to use it :
 ```html
 <div id="my_parent_elem">
@@ -20,7 +37,6 @@ $('#my_parent_elem').covercase(scroll_orientation: "y");
 ```
 
 
-Horizontal scrolling with mouse wheel require : [jQuery Mousewheel Plugin](https://github.com/jquery/jquery-mousewheel) 
 
 ## Methodes :
 
