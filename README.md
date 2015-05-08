@@ -6,9 +6,13 @@ It's a ultra light weight [jQuery](http://jquery.com/) plugin that that turns th
 
 ##Requirement :
 [jQuery](http://jquery.com/)
+
 Horizontal scrolling with mouse wheel require : [jQuery Mousewheel Plugin](https://github.com/jquery/jquery-mousewheel)
+
 Paste jquery.covercase.min.js and jquery.mousewheel.min.js into your js folder
+
 Paste jquery.covercase.css into your stylesheet folder
+
 Adjust the image path in the jquery.covercase.css
 
 ```html
