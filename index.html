@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Covercase by sebasonic</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Covercase</h1>
+        <h2>something like a slider menu with vertical or horizontal orientation</h2>
+        <a href="https://github.com/sebasonic/covercase" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="covercase" class="anchor" href="#covercase" aria-hidden="true"><span class="octicon octicon-link"></span></a>covercase</h1>
+
+<p>A slider menu with vertical or horizontal orientation</p>
+
+<p>It's a ultra light weight <a href="http://jquery.com/">jQuery</a> plugin that that turns the first level children of an element into a slider menu.</p>
+
+<h2>
+<a id="example-" class="anchor" href="#example-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example :</h2>
+
+<p>Here is the simpliest example of how to use it :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>my_parent_elem<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/....<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/....<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/....<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/....<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<div class="highlight highlight-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#my_parent_elem<span class="pl-pds">'</span></span>).covercase(scroll_orientation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>Horizontal scrolling with mouse wheel require : <a href="https://github.com/jquery/jquery-mousewheel">jQuery Mousewheel Plugin</a> </p>
+
+<h2>
+<a id="methodes-" class="anchor" href="#methodes-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methodes :</h2>
+
+<h3>
+<a id="init" class="anchor" href="#init" aria-hidden="true"><span class="octicon octicon-link"></span></a>init</h3>
+
+<p>Initialization of the plugin</p>
+
+<h5>
+<a id="orientation" class="anchor" href="#orientation" aria-hidden="true"><span class="octicon octicon-link"></span></a>orientation</h5>
+
+<p>Allow to control the slider orientation</p>
+
+<pre><code>Type: string
+Value: 'x' or 'y'
+</code></pre>
+
+<h5>
+<a id="width" class="anchor" href="#width" aria-hidden="true"><span class="octicon octicon-link"></span></a>width</h5>
+
+<pre><code>Type: css
+Examples: '100px' or '100%'
+</code></pre>
+
+<h5>
+<a id="height" class="anchor" href="#height" aria-hidden="true"><span class="octicon octicon-link"></span></a>height</h5>
+
+<pre><code>Type: css
+Examples: '200px' or '75%'
+</code></pre>
+
+<p>Example :</p>
+
+<div class="highlight highlight-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#my_parent_elem<span class="pl-pds">'</span></span>).covercase( scroll_orientation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>,
+                                height<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>75%<span class="pl-pds">"</span></span>,
+                                width<span class="pl-k">:</span> <span class="pl-c1">200</span>);</pre></div>
+
+<p>Callback :
+cc_init</p>
+
+<h3>
+<a id="destroy" class="anchor" href="#destroy" aria-hidden="true"><span class="octicon octicon-link"></span></a>destroy</h3>
+
+<p>Destroy the plugin (no option)
+Example :</p>
+
+<div class="highlight highlight-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#my_parent_elem<span class="pl-pds">'</span></span>).covercase(<span class="pl-s"><span class="pl-pds">'</span>destroy<span class="pl-pds">'</span></span>);</pre></div>
+
+<h3>
+<a id="resize_to" class="anchor" href="#resize_to" aria-hidden="true"><span class="octicon octicon-link"></span></a>resize_to</h3>
+
+<p>Change the slider width or height</p>
+
+<h5>
+<a id="width-1" class="anchor" href="#width-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>width</h5>
+
+<pre><code>Type: css
+Examples: '100px' or '100%'
+</code></pre>
+
+<h5>
+<a id="height-1" class="anchor" href="#height-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>height</h5>
+
+<pre><code>Type: css
+Examples: '200px' or '75%'
+</code></pre>
+
+<p>Example :</p>
+
+<div class="highlight highlight-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#my_parent_elem<span class="pl-pds">'</span></span>).covercase(<span class="pl-s"><span class="pl-pds">'</span>resize_to<span class="pl-pds">'</span></span>, height<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span>,
+                                            width<span class="pl-k">:</span> <span class="pl-c1">300</span>);</pre></div>
+
+<p>Callback :
+cc_resize</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/sebasonic/covercase/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sebasonic/covercase/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/sebasonic/covercase"></a> is maintained by <a href="https://github.com/sebasonic">sebasonic</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
