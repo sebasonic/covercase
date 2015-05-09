@@ -1,3 +1,11 @@
+/*
+ * JQuery Covercase Plugin 1.0
+ * https://github.com/sebasonic/covercase
+ *
+ * Copyright 2015, Sebastien Caillaud
+ * Released under the GNU GENERAL PUBLIC LICENSE Version 2
+ * https://github.com/sebasonic/covercase/blob/master/LICENSE
+ */
 .covercase-wrap {
     position: relative;
     border: 2px solid #777777;

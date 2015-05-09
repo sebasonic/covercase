@@ -1,3 +1,11 @@
+/*
+ * JQuery Covercase Plugin 1.0
+ * https://github.com/sebasonic/covercase
+ *
+ * Copyright 2015, Sebastien Caillaud
+ * Released under the GNU GENERAL PUBLIC LICENSE Version 2
+ * https://github.com/sebasonic/covercase/blob/master/LICENSE
+ */
 (function($) {
     var methods = {
         init: function(options) {
@@ -194,9 +202,7 @@
             $.error( 'Method ' +  method + ' does not exist on jQuery.covercase' );
             return this;
         }
- 
         return method.apply(this, arguments);
- 
     }
  
 })(jQuery);

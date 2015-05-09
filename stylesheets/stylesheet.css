@@ -493,10 +493,6 @@ header h2 {
   width: 690px;
 }
 
-#main-content img {
-  max-width: 100%;
-}
-
 aside#sidebar {
   float: right;
   width: 200px;
