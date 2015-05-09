@@ -3,17 +3,16 @@ A slider menu with vertical or horizontal orientation
 
 It's a ultra light weight [jQuery](http://jquery.com/) plugin that that turns the first level children of an element into a slider menu.
 
+##What it looks like ???
+just have a look at the [demo page](http://sebasonic.github.io/covercase/)
 
 ##Requirement :
-[jQuery](http://jquery.com/)
 
-Horizontal scrolling with mouse wheel require : [jQuery Mousewheel Plugin](https://github.com/jquery/jquery-mousewheel)
-
-Paste jquery.covercase.min.js and jquery.mousewheel.min.js into your js folder
-
-Paste jquery.covercase.css into your stylesheet folder
-
-Adjust the image path in the jquery.covercase.css
+* import [jQuery](http://jquery.com/)
+* Horizontal scrolling with mouse wheel require : [jQuery Mousewheel Plugin](https://github.com/jquery/jquery-mousewheel)
+* Paste **jquery.covercase.min.js** and **jquery.mousewheel.min.js** into your js folder
+* Paste **jquery.covercase.css** into your stylesheet folder
+* You may have to adjust the image path in jquery.covercase.css
 
 ```html
 <link rel="stylesheet" type="text/css" href="stylesheets/jquery.covercase.css">
@@ -21,7 +20,6 @@ Adjust the image path in the jquery.covercase.css
 <script type="text/javascript" src="javascripts/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.covercase.min.js"></script>
 ```
-
 
 ## Example :
 
@@ -39,8 +37,6 @@ Here is the simpliest example of how to use it :
 ```js
 $('#my_parent_elem').covercase(scroll_orientation: "y");
 ```
-
-
 
 ## Methodes :
 

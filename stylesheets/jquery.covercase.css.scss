@@ -1,3 +1,11 @@
+/*
+ * JQuery Covercase Plugin 1.0
+ * https://github.com/sebasonic/covercase
+ *
+ * Copyright 2015, Sebastien Caillaud
+ * Released under the GNU GENERAL PUBLIC LICENSE Version 2
+ * https://github.com/sebasonic/covercase/blob/master/LICENSE
+ */
 .covercase-wrap {
 		position: relative;
 		border: 2px solid #777777;	
@@ -35,28 +43,28 @@
 		}
 	}
 	.left {
-	    background: url("covercase_arrows.png") 204px 68px;
+	    background: url("../images/covercase_arrows.png") 204px 68px;
 		top: 50%;
 		left:20px;
 		margin-top:-34px;
 	}
 	.left:hover{
-		background: url("covercase_arrows.png") 204px 0px;
+		background: url("../images/covercase_arrows.png") 204px 0px;
 	}
 	.left:active{
-		background: url("covercase_arrows.png") 204px 68px;
+		background: url("../images/covercase_arrows.png") 204px 68px;
 	}
 	.right {
-	    background: url("covercase_arrows.png") 68px 68px;
+	    background: url("../images/covercase_arrows.png") 68px 68px;
 		top: 50%;
 		right:20px;
 		margin-top:-34px;
 	}
 	.right:hover{
-		background: url("covercase_arrows.png") 68px 0px;
+		background: url("../images/covercase_arrows.png") 68px 0px;
 	}
 	.right:active{
-		background: url("covercase_arrows.png") 68px 68px;
+		background: url("../images/covercase_arrows.png") 68px 68px;
 	}
 }
 
@@ -72,27 +80,27 @@
 		height: 100%;
 	}
 	.up {
-	    background: url("covercase_arrows.png") 137px 68px;
+	    background: url("../images/covercase_arrows.png") 137px 68px;
 	    top: 20px;
 		left:50%;
 		margin-left:-34px;
 	}
 	.up:hover{
-			background: url("covercase_arrows.png") 137px 0px;
+			background: url("../images/covercase_arrows.png") 137px 0px;
 		}
 	.up:active{
-			background: url("covercase_arrows.png") 137px 68px;
+			background: url("../images/covercase_arrows.png") 137px 68px;
 		}
 	.down {
-	    background: url("covercase_arrows.png") 0px 68px;
+	    background: url("../images/covercase_arrows.png") 0px 68px;
 	    bottom: 20px;
 		left:50%;
 		margin-left:-34px;
 	}
 	.down:hover{
-		background: url("covercase_arrows.png") 0px 0px;
+		background: url("../images/covercase_arrows.png") 0px 0px;
 	}
 	.down:active{
-		background: url("covercase_arrows.png") 0px 68px;
+		background: url("../images/covercase_arrows.png") 0px 68px;
 	}
 }

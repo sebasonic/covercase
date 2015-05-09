@@ -1,3 +1,11 @@
+/*
+ * JQuery Covercase Plugin 1.0
+ * https://github.com/sebasonic/covercase
+ *
+ * Copyright 2015, Sebastien Caillaud
+ * Released under the GNU GENERAL PUBLIC LICENSE Version 2
+ * https://github.com/sebasonic/covercase/blob/master/LICENSE
+ */
 (function($) {
     var methods = {
         init: function(options) {
@@ -21,8 +29,6 @@
                     list_wrap = cc.wrap( "<div class='covercase-list-wrap'></div>" ).parent(".covercase-list-wrap"),
                     cover_list_top_pos = 0,
                     cover_list_left_pos = 0,
-                    cover_list_height = 0,
-                    cover_list_width = 0,
                     cover_case_height = 0,
                     cover_case_width = 0,
                     check_x_limits = function(event) {
@@ -31,8 +37,8 @@
                             cover_list_left_pos = 0;
                             cc_wrap.find(".left").hide();
                             cc_wrap.find(".right").show();
-                        }else if (cover_list_left_pos <= (cover_case_width - cover_list_width)){
-                            cover_list_left_pos = cover_case_width - cover_list_width;
+                        }else if (cover_list_left_pos <= (cover_case_width - cc.width())){
+                            cover_list_left_pos = cover_case_width - cc.width();
                             cc_wrap.find(".right").hide();
                             cc_wrap.find(".left").show();
                         }else {
@@ -46,8 +52,8 @@
                             cover_list_top_pos = 0;
                             cc_wrap.find(".up").hide();
                             cc_wrap.find(".down").show();
-                        } else if (cover_list_height <= (cover_case_height-cover_list_top_pos)){
-                            cover_list_top_pos = cover_case_height-cover_list_height;
+                        } else if (cc.height() <= (cover_case_height-cover_list_top_pos)){
+                            cover_list_top_pos = cover_case_height-cc.height();
                             cc_wrap.find(".down").hide();
                             cc_wrap.find(".up").show();
                         } else {
@@ -58,9 +64,8 @@
                     display_orientation = function( JQuery ) {
                         if (settings.scroll_orientation === "x"){
                             cc_wrap.addClass("covercase-x");
-                            cover_list_width = cc.width();
-                            if (cc_wrap.width() > cover_list_width){
-                                cc_wrap.innerWidth(cover_list_width);
+                            if (cc_wrap.width() > cc.width()){
+                                cc_wrap.innerWidth(cc.width());
                             }else {
                                 cc_wrap.append('<div class="arrow left"></div><div class="arrow right"></div>').find(".left").hide();
                                 cc_wrap.find(".arrow").on('click', function(event){
@@ -87,9 +92,8 @@
                         }
                         if (settings.scroll_orientation === "y"){
                             cc_wrap.addClass("covercase-y" );
-                            cover_list_height = cc.height();
-                            if (cc_wrap.height() > cover_list_height){
-                                cc_wrap.innerHeight(cover_list_height);
+                            if (cc_wrap.height() > cc.height()){
+                                cc_wrap.innerHeight(cc.height());
                             }else {
                                 cc_wrap.append('<div class="arrow up"></div><div class="arrow down"></div>').find(".up").hide();
                                 cc_wrap.find(".arrow").on('click', function(event){
@@ -198,9 +202,7 @@
             $.error( 'Method ' +  method + ' does not exist on jQuery.covercase' );
             return this;
         }
- 
         return method.apply(this, arguments);
- 
     }
  
 })(jQuery);
