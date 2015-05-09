@@ -43,7 +43,7 @@ $('#my_parent_elem').covercase(scroll_orientation: "y");
 ### init
 Initialization of the plugin
 
-##### orientation
+##### scroll_orientation
 Allow to control the slider orientation
 
     Type: string
